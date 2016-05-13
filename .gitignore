@@ -1,0 +1,6 @@
+.DS_Store*
+.hubot_history
+data/brain-dump.json
+node_modules
+config
+scripts

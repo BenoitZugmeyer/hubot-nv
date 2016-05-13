@@ -1,0 +1,21 @@
+{
+  "name": "hubot-nv",
+  "version": "1.0.0",
+  "author": "Benoît Zugmeyer <benoit@zugmeyer.com>",
+  "description": "A simple helpful robot for your Company",
+  "licenses": "Expat",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BenoitZugmeyer/hubot-nv.git"
+  },
+  "dependencies": {
+    "cron": "1.0.6",
+    "css-select": "^1.0.0",
+    "entities": "^1.1.1",
+    "htmlparser2": "^3.8.2",
+    "hubot": ">= 2.6.0 < 3.0.0",
+    "hubot-irc": "git+https://github.com/BenoitZugmeyer/hubot-irc#master",
+    "hubot-scripts": ">= 2.5.0 < 3.0.0",
+    "irc": "^0.4.0"
+  }
+}
