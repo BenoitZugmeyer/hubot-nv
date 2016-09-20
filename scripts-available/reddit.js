@@ -97,10 +97,10 @@ module.exports = function (robot) {
 
         if (isBoardSearch) {
             if (isSubredditSearch) {
-                url = 'http://www.reddit.com/subreddits/search.json?q=' + queryURI + '&limit=10';
+                url = 'https://www.reddit.com/subreddits/search.json?q=' + queryURI + '&limit=10';
             }
             else if (isSearch) {
-                url = 'http://www.reddit.com/search.json?q=' + queryURI + '&limit=100';
+                url = 'https://www.reddit.com/search.json?q=' + queryURI + '&limit=100';
             }
             else {
                 if (type === 'sub') {
@@ -111,11 +111,11 @@ module.exports = function (robot) {
                     msg.send("Nope.");
                     return;
                 }
-                url = 'http://www.reddit.com/r/' + queryURI + '.json?limit=100';
+                url = 'https://www.reddit.com/r/' + queryURI + '.json?limit=100';
             }
         }
         else {
-            url = 'http://www.reddit.com/user/' + queryURI + '/submitted/.json?limit=100';
+            url = 'https://www.reddit.com/user/' + queryURI + '/submitted/.json?limit=100';
         }
 
         util.request(robot, url)
@@ -184,7 +184,7 @@ module.exports = function (robot) {
         var n = Number(msg.match[1]) || 0;
         var sauce = getSauce(n);
         if (sauce) {
-            msg.send('Sauce: http://www.reddit.com' + sauce);
+            msg.send('Sauce: https://www.reddit.com' + sauce);
         }
         else {
             msg.send('Sauce not found');
